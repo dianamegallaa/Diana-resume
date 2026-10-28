@@ -1,0 +1,797 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Replace YOUR_NET_ID with your actual LearnCS8 Net ID -->
+    <meta name="author" content="Dmega002">
+
+    <meta name="description" content="Learn more about Diana Megallaa, a UC Riverside Pre-Business student interested in finance, investment banking, leadership, and professional development.">
+
+    <title>Diana Megallaa - Pre-Business Student</title>
+
+    <!-- Website favicon -->
+    <link rel="shortcut icon" href="img/website.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #343a40;
+            line-height: 1.7;
+        }
+
+        #sideNav {
+            background-color: #183153;
+            text-align: center;
+        }
+
+        #sideNav .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #b8d8f8 !important;
+        }
+
+        .img-profile {
+            max-width: 250px;
+            max-height: 250px;
+            border: 5px solid #d9e6f2;
+            object-fit: cover;
+        }
+
+        .resume-section {
+            padding: 5rem 3rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        h1, h2, h3 {
+            color: #183153;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .subheading {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #52769b;
+            margin-bottom: 1rem;
+        }
+
+        .text-primary {
+            color: #52769b !important;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            color: white;
+            background-color: #183153;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            margin-right: 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #52769b;
+        }
+
+        .resume-item {
+            margin-bottom: 3rem;
+        }
+
+        .portfolio-image {
+            width: 100%;
+            max-width: 350px;
+            height: 250px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+            border: 2px solid #d9e6f2;
+        }
+
+        .portfolio-image:hover {
+            opacity: 0.85;
+        }
+
+        .skill-list li {
+            margin-bottom: 8px;
+        }
+
+        @media (min-width: 992px) {
+            body {
+                padding-top: 0;
+                padding-left: 17rem;
+            }
+
+            #sideNav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                width: 17rem;
+                height: 100vh;
+            }
+
+            #sideNav .navbar-brand {
+                display: flex;
+                margin: auto auto 0;
+                padding: 0.5rem;
+            }
+
+            #sideNav .navbar-collapse {
+                display: flex;
+                align-items: flex-start;
+                flex-grow: 0;
+                width: 100%;
+                margin-bottom: auto;
+            }
+
+            #sideNav .navbar-nav {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            #sideNav .navbar-nav .nav-item {
+                display: block;
+            }
+
+            #sideNav .navbar-nav .nav-link {
+                display: block;
+            }
+
+            .resume-section {
+                min-height: 100vh;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .resume-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .portfolio-image {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body id="page-top">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
+
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">DIANA MEGALLAA</span>
+
+            <span class="d-none d-lg-block">
+                <!-- Replace with your own profile photo -->
+                <img
+                    class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="img/yourname.jpg"
+                    alt="Profile Picture">
+            </span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="resume-section" id="about">
+
+        <div class="resume-section-content">
+
+            <h1>DIANA <span class="text-primary">MEGALLAA</span></h1>
+
+            <div class="subheading mb-4">
+                Second-Year Pre-Business Student · UC Riverside
+            </div>
+
+            <p class="lead mb-4">
+                I am a second-year Pre-Business student at the University of
+                California, Riverside, interested in finance, investment
+                banking, and business strategy. I enjoy learning how businesses
+                operate, how financial decisions influence companies, and how
+                individuals and organizations can use financial knowledge to
+                make informed decisions.
+                <br><br>
+
+                Through my involvement in campus organizations, I have been
+                able to explore my professional interests while developing
+                leadership, communication, and teamwork skills. I am involved
+                in FBLA, where I serve as Director of Professional Development,
+                and Hylander Financial Group. These experiences allow me to
+                connect with other students, learn from people with different
+                backgrounds, and become more familiar with professional
+                opportunities in business and finance.
+                <br><br>
+
+                As Director of Professional Development for FBLA, I help
+                support programming that prepares students for internships,
+                professional networking, and future career opportunities.
+                I value creating opportunities for students to build confidence
+                and learn practical skills that they can use beyond college.
+                I believe professional development is important because
+                success involves more than academic knowledge. It also requires
+                communication, preparation, and the willingness to keep learning.
+                <br><br>
+
+                My work experiences have also helped me understand the
+                importance of responsibility, adaptability, and working with
+                different people. Through customer-facing work and sales
+                experience, I have developed my ability to communicate clearly,
+                respond to challenges, and work toward goals. I have learned
+                that building trust and understanding people's needs are
+                important parts of successful business relationships.
+                <br><br>
+
+                Outside of academics and professional development, I enjoy
+                playing soccer, participating in flag football, going to the
+                gym, cooking, playing pickleball, and hiking. Staying active
+                has taught me discipline, consistency, and persistence.
+                Whether I am working toward a personal fitness goal or learning
+                something new, I try to approach challenges with a willingness
+                to improve. I carry these same values into my academic and
+                professional goals.
+                <br><br>
+
+                Looking ahead, I hope to continue building my knowledge of
+                financial markets, company valuation, and business strategy
+                while gaining experience through internships and mentorship.
+                I am particularly interested in learning more about investment
+                banking and financial advising. My goal is to build a strong
+                foundation in finance, learn from experienced professionals,
+                and develop the analytical and interpersonal skills necessary
+                to contribute to a team.
+                <br><br>
+
+                I see college as an opportunity to challenge myself, explore
+                different career paths, and build meaningful connections.
+                I am excited to continue learning through coursework,
+                extracurricular involvement, and hands-on professional
+                experiences as I work toward a career in business and finance.
+            </p>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="social-icons">
+
+                <a target="_blank"
+                    rel="noopener noreferrer"
+                    id="socialicon-1"
+                    href="https://www.linkedin.com/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a target="_blank"
+                    rel="noopener noreferrer"
+                    id="socialicon-2"
+                    href="https://github.com/dianamegallaa">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a target="_blank"
+                    rel="noopener noreferrer"
+                    id="socialicon-3"
+                    href="https://www.ucr.edu/">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a id="socialicon-4"
+                    href="mailto:dmega002@ucr.edu">
+                    <i class="fa fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="resume-section" id="experience">
+
+        <div class="resume-section-content">
+
+            <h2>Experience</h2>
+
+
+            <!-- JOB 1 -->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+
+                <div class="resume-content">
+
+                    <h3 class="mb-0">Sales Intern</h3>
+
+                    <div class="subheading mb-3">
+                        Exodus Enterprise
+                    </div>
+
+                    <p>
+                        • Communicate directly with customers to understand
+                        their needs and explain available products and services.
+                        <br>
+
+                        • Develop interpersonal and persuasion skills through
+                        face-to-face customer interactions.
+                        <br>
+
+                        • Collaborate with team members to support customer
+                        acquisition, customer retention, and business goals.
+                        <br>
+
+                        • Support team development by helping with interviews
+                        and coaching individuals on communication and
+                        professional expectations.
+                    </p>
+
+                </div>
+
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">
+                        2026 - Present
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- JOB 2 -->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+
+                <div class="resume-content">
+
+                    <h3 class="mb-0">Director of Professional Development</h3>
+
+                    <div class="subheading mb-3">
+                        Future Business Leaders of America (FBLA)
+                    </div>
+
+                    <p>
+                        • Help organize professional development programming
+                        focused on internships, career preparation, and
+                        professional networking.
+                        <br>
+
+                        • Prepare educational presentations to help students
+                        strengthen their resumes, elevator pitches, and
+                        internship preparation.
+                        <br>
+
+                        • Encourage member participation through interactive
+                        activities and collaborative learning.
+                        <br>
+
+                        • Support students in developing communication,
+                        leadership, and career-readiness skills.
+                    </p>
+
+                </div>
+
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">
+                        2026 - Present
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- JOB 3 -->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+
+                <div class="resume-content">
+
+                    <h3 class="mb-0">Peer Educator</h3>
+
+                    <div class="subheading mb-3">
+                        UC Riverside CHASS
+                    </div>
+
+                    <p>
+                        • Support student learning by helping facilitate
+                        discussions, workshops, and academic activities.
+                        <br>
+
+                        • Share information about campus resources, academic
+                        support, and professional development opportunities.
+                        <br>
+
+                        • Encourage student participation by helping create
+                        a welcoming and supportive learning environment.
+                        <br>
+
+                        • Assist with course responsibilities, including
+                        grading assigned work and communicating important
+                        reminders to students.
+                    </p>
+
+                </div>
+
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">
+                        2026 - Present
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- JOB 4 -->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+
+                <div class="resume-content">
+
+                    <h3 class="mb-0">Ride Operator</h3>
+
+                    <div class="subheading mb-3">
+                        Frosty's Pumpkin Patch
+                    </div>
+
+                    <p>
+                        • Assisted guests and communicated ride instructions
+                        to support a positive customer experience.
+                        <br>
+
+                        • Responded to customer questions and concerns while
+                        maintaining professional communication.
+                        <br>
+
+                        • Worked with team members to maintain an organized,
+                        clean, and welcoming environment.
+                        <br>
+
+                        • Adapted to a fast-paced work environment while
+                        balancing customer service and operational
+                        responsibilities.
+                    </p>
+
+                </div>
+
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">
+                       <span class="text-primary">
+    October 2025 - December 2025
+</span>
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- JOB 5 -->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+
+                <div class="resume-content">
+
+                    <h3 class="mb-0">Finance Organization Member</h3>
+
+                    <div class="subheading mb-3">
+                        Hylander Financial Group
+                    </div>
+
+                    <p>
+                        • Participate in professional development related
+                        to finance and investment banking.
+                        <br>
+
+                        • Build knowledge of mergers and acquisitions,
+                        financial strategy, and capital markets.
+                        <br>
+
+                        • Continue developing financial literacy,
+                        analytical thinking, and professional networking
+                        skills.
+                        <br>
+
+                        • Explore career opportunities and learn about
+                        the skills required for finance-related roles.
+                    </p>
+
+                </div>
+
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">
+                        2026 - Present
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+    <section class="resume-section" id="education">
+
+        <div class="resume-section-content">
+
+            <h2>Education</h2>
+
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+
+                <div class="resume-content">
+
+                    <h3 class="mb-0">
+                        University of California, Riverside
+                    </h3>
+
+                    <div class="subheading mb-3">
+                        Pre-Business
+                    </div>
+
+                    <div>
+                        Undergraduate Student
+                    </div>
+
+                    <p>
+                        Areas of Interest: Finance, Investment Banking,
+                        Financial Markets, and Business Strategy
+                    </p>
+
+                </div>
+
+                <div class="resume-date text-md-right">
+
+                    <span class="text-primary">
+                        Expected Graduation: 2029
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section class="resume-section" id="skills">
+
+        <div class="resume-section-content">
+
+            <h2>Skills & Interests</h2>
+
+            <div class="subheading mb-3">
+                Professional Skills
+            </div>
+
+            <ul class="skill-list">
+
+                <li>Communication and Customer Relations</li>
+
+                <li>Leadership and Team Collaboration</li>
+
+                <li>Professional Development and Networking</li>
+
+                <li>Problem-Solving and Adaptability</li>
+
+                <li>Organization and Time Management</li>
+
+                <li>Presentation and Public Speaking</li>
+
+                <li>Customer Service and Relationship Building</li>
+
+            </ul>
+
+
+            <div class="subheading mb-3 mt-4">
+                Finance Interests
+            </div>
+
+            <ul class="skill-list">
+
+                <li>Investment Banking</li>
+
+                <li>Financial Markets and Investing</li>
+
+                <li>Mergers and Acquisitions</li>
+
+                <li>Financial Advising</li>
+
+                <li>Business Strategy</li>
+
+            </ul>
+
+
+            <div class="subheading mb-3 mt-4">
+                Personal Interests
+            </div>
+
+            <p>
+                Soccer, flag football, fitness, cooking, pickleball,
+                hiking, and continuous learning.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="resume-section" id="portfolio">
+
+        <div class="resume-section-content">
+
+            <h2>Portfolio</h2>
+
+            <p>
+                A collection of experiences, projects, and achievements
+                that reflect my academic growth, leadership, and
+                professional development.
+            </p>
+
+            <div class="text-center">
+
+                <!-- Image 1 -->
+                <img
+                    class="portfolio-image"
+                    src="img/image1.jpeg"
+                    alt="Professional or campus photo">
+
+                <!-- Image 2 -->
+                <img
+                    class="portfolio-image"
+                    src="img/image2.jpeg"
+                    alt="FBLA professional development activity">
+
+                <br>
+
+                <!-- Image 3 -->
+                <img
+                    class="portfolio-image"
+                    src="img/image3.jpeg"
+                    alt="University or academic achievement">
+
+                <!-- Image 4 -->
+                <img
+                    class="portfolio-image"
+                    src="img/image4.jpeg"
+                    alt="Professional experience or certificate">
+
+                <br>
+
+                <!-- Image 5 -->
+                <img
+                    class="portfolio-image"
+                    src="img/image5.jpeg"
+                    alt="Finance or business related project">
+
+                <!-- Image 6 -->
+                <img
+                    class="portfolio-image"
+                    src="img/image6.jpeg"
+                    alt="Leadership or extracurricular activity">
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4">
+
+        <p>
+            &copy; 2026 DIANA MEGALLAA | UC Riverside
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.js-scroll-trigger').forEach(function(link) {
+
+            link.addEventListener('click', function(event) {
+
+                var targetId = this.getAttribute('href');
+
+                if (targetId && targetId.startsWith('#')) {
+
+                    var target = document.querySelector(targetId);
+
+                    if (target) {
+
+                        event.preventDefault();
+
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile navigation after clicking a link
+                        var navbar = document.getElementById('navbarResponsive');
+
+                        if (navbar && navbar.classList.contains('show')) {
+                            navbar.classList.remove('show');
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+```
